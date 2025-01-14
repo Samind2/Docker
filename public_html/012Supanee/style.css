@@ -1,0 +1,194 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ตกแต่งส่วนหัว */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #5f6f65;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* ปุ่ม */
+a,
+button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #6482ad;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover,
+button:hover {
+  background-color: #7fa1c3;
+}
+
+/* ตาราง */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #6482ad;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ฟอร์ม */
+form {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form input,
+form textarea,
+form button {
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  width: auto;
+  background-color: #7fa1c3;
+}
+
+form button:hover {
+  background-color: #6482ad;
+}
+
+/* ลิงก์ */
+a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #4f6e91;
+}
+/* จัดลิงก์ "เพิ่มสินค้า" ให้อยู่ตรงกลาง */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* การจัดรูปแบบการ์ด */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card .btn {
+  display: inline-block;
+  background-color: #6482ad;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.card .btn:hover {
+  background-color: #7fa1c3;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* การปรับเปลี่ยนขนาดของปุ่ม เพิ่มสินค้า */
+.add-product-btn {
+  background-color: #6482ad;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-btn:hover {
+  background-color: #7fa1c3;
+}
+
+/* ทำให้การ์ดตอบสนองการใช้งานบนหน้าจอเล็ก */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
